@@ -31,6 +31,7 @@ def main():
             tasks.append(BookReader(thelock))
             readsexp += 1
     stats = Stats(reads, readsexp, writes, writesexp)
+    stats.daemon = True
     stats.start()
 
     for i in range(20):

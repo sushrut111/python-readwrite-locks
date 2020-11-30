@@ -33,9 +33,9 @@ class Stats(threading.Thread):
 
     def run(self):
         while True:
-            if readsexp == reads and writesexp == writes:
-                self.printstats()
-                break
+            # if readsexp == reads and writesexp == writes:
+            #     self.printstats()
+            #     break
 
             self.printstats()
             time.sleep(5)
